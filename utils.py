@@ -16,7 +16,7 @@ filters = {
     '2MASS.H': {'wavelength': np.array([14000, 16500, 19000]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 1050 * u.Jy},
     'gaia.G': {'wavelength': np.array([3300, 6400, 10500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 3441 * u.Jy},
     'gaia.BP': {'wavelength': np.array([3300, 5100, 6800]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 3717 * u.Jy},
-    'gaia.RP': {'wavelength': np.array([6300, 7700, 10500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 2650 * u.Jy},
+    'gaia.RP': {'wavelength': np.array([6300, 7700, 10500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 2649 * u.Jy},
 }
 
 # Function to read spectrum data
