@@ -2,6 +2,7 @@ import pysynphot as S
 import numpy as np
 import astropy.units as u
 import pandas as pd
+import streamlit as st
 
 filters = {
     'johnson.u': {'wavelength': np.array([3000, 3500, 4000]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 1527 * u.Jy},
@@ -20,18 +21,22 @@ filters = {
 }
 
 # Function to read spectrum data
+
+
 def read_spectrum(uploaded_file):
     if uploaded_file.type == 'text/csv':
-        data = pd.read_csv(uploaded_file, header=0, dtype='float64')
+        data = pd.read_csv(uploaded_file, header=None)
     else:
         data = pd.read_csv(uploaded_file, delimiter="\\t", header=None)
-    if data.shape[1] > 2 and data.shape[1] % 2 == 0:
-        data.drop(data.columns[0], axis=1, inplace=True)
+    if data.shape[1] > 2:
+        if pd.isnull(data.iloc[0, 0]):
+            data.drop(data.columns[0], axis=1, inplace=True)
         data.drop(data.columns[[i for i in range(
             2, data.shape[1], 2)]], axis=1, inplace=True)
         data.columns = data.iloc[0]
         data.drop(data.index[0], inplace=True)
         data.reset_index(drop=True, inplace=True)
+        data = data.astype('float64')
     elif data.shape[1] == 2:
         data.columns = ['wavelength', 'flux']
 
