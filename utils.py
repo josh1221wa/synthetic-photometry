@@ -14,7 +14,7 @@ filters = {
     'stromgren.b': {'wavelength': np.array([4500, 5500, 6500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 3690 * u.Jy},
     '2MASS.J': {'wavelength': np.array([11000, 12500, 14000]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 1547 * u.Jy},
     '2MASS.H': {'wavelength': np.array([14000, 16500, 19000]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 1050 * u.Jy},
-    'gaia.G': {'wavelength': np.array([3300, 6400, 10500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 3442 * u.Jy},
+    'gaia.G': {'wavelength': np.array([3300, 6400, 10500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 3441 * u.Jy},
     'gaia.BP': {'wavelength': np.array([3300, 5100, 6800]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 6400 * u.Jy},
     'gaia.RP': {'wavelength': np.array([6300, 7700, 10500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 2550 * u.Jy},
 }
