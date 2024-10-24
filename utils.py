@@ -5,7 +5,7 @@ import pandas as pd
 
 filters = {
     'johnson.u': {'wavelength': np.array([3000, 3500, 4000]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 1527 * u.Jy},
-    'johnson.b': {'wavelength': np.array([3500, 4500, 5500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 4080 * u.Jy},
+    'johnson.b': {'wavelength': np.array([3500, 4500, 5500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 4070 * u.Jy},
     'johnson.v': {'wavelength': np.array([4500, 5500, 6500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 3640 * u.Jy},
     'cousins.r': {'wavelength': np.array([5500, 6500, 7500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 3080 * u.Jy},
     'cousins.i': {'wavelength': np.array([6500, 7500, 8500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 2550 * u.Jy},
