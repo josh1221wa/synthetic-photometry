@@ -10,7 +10,7 @@ filters = {
     'cousins.r': {'wavelength': np.array([5500, 6500, 7500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 3121 * u.Jy},
     'cousins.i': {'wavelength': np.array([6500, 7500, 8500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 2665 * u.Jy},
     'stromgren.u': {'wavelength': np.array([3000, 3500, 4000]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 5420 * u.Jy},
-    'stromgren.v': {'wavelength': np.array([3500, 4500, 5500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 4630 * u.Jy},
+    'stromgren.v': {'wavelength': np.array([3500, 4500, 5500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 4635 * u.Jy},
     'stromgren.b': {'wavelength': np.array([4500, 5500, 6500]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 3640 * u.Jy},
     '2MASS.J': {'wavelength': np.array([11000, 12500, 14000]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 1594 * u.Jy},
     '2MASS.H': {'wavelength': np.array([14000, 16500, 19000]) * u.AA, 'transmission': np.array([0.0, 1.0, 0.0]), 'zero_point': 1024 * u.Jy},
